@@ -1,0 +1,44 @@
+name: brass_and_starlight
+description: Trace constellations from a rooftop observatory and fill your Star Atlas.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.5.5
+  audioplayers: ^6.8.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/art/
+    - assets/sfx/
+    - assets/fonts/OFL-Cinzel.txt
+    - assets/fonts/OFL-CrimsonPro.txt
+  fonts:
+    - family: Cinzel
+      fonts:
+        - asset: assets/fonts/Cinzel.ttf
+    - family: CrimsonPro
+      fonts:
+        - asset: assets/fonts/CrimsonPro.ttf
+        - asset: assets/fonts/CrimsonPro-Italic.ttf
+          style: italic
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: assets/icon/icon_full.png
+  adaptive_icon_background: "#0A0D24"
+  adaptive_icon_foreground: assets/icon/icon_foreground.png
+  min_sdk_android: 21
